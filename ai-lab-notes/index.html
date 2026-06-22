@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A beginner-friendly place to keep fictional AI lab notes."
+    />
+    <title>AI Lab Notes</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <p class="eyebrow">Beginner workspace</p>
+        <h1>AI Lab Notes</h1>
+        <p class="intro">
+          A simple reference for setting up projects, remembering useful
+          commands, and recording fictional experiments.
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card" aria-labelledby="setup-heading">
+        <h2 id="setup-heading">Setup checklist</h2>
+        <p>Use this list when starting a small coding project.</p>
+        <ul class="checklist">
+          <li><label><input type="checkbox" /> Open a terminal</label></li>
+          <li><label><input type="checkbox" /> Check the current folder with <code>pwd</code></label></li>
+          <li><label><input type="checkbox" /> Check Git changes with <code>git status</code></label></li>
+          <li><label><input type="checkbox" /> Install project packages with <code>npm install</code></label></li>
+          <li><label><input type="checkbox" /> Start the app with <code>npm run dev</code></label></li>
+        </ul>
+      </section>
+
+      <section class="card" aria-labelledby="commands-heading">
+        <h2 id="commands-heading">Linux and Git command cheat sheet</h2>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Command</th>
+                <th scope="col">What it does</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><code>pwd</code></td><td>Shows your current folder.</td></tr>
+              <tr><td><code>ls</code></td><td>Lists files and folders.</td></tr>
+              <tr><td><code>cd folder-name</code></td><td>Moves into a folder.</td></tr>
+              <tr><td><code>mkdir folder-name</code></td><td>Creates a new folder.</td></tr>
+              <tr><td><code>git status</code></td><td>Shows changed and untracked files.</td></tr>
+              <tr><td><code>git add .</code></td><td>Stages current changes for a commit.</td></tr>
+              <tr><td><code>git commit -m "message"</code></td><td>Saves staged changes in Git.</td></tr>
+              <tr><td><code>git push</code></td><td>Uploads commits to the connected remote.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="notes-heading">
+        <h2 id="notes-heading">Fictional lab notes</h2>
+        <p>
+          Record made-up experiments only. Notes stay in this browser and are
+          not sent anywhere.
+        </p>
+
+        <form id="note-form">
+          <div class="form-field">
+            <label for="experiment">Experiment name</label>
+            <input
+              id="experiment"
+              name="experiment"
+              type="text"
+              maxlength="80"
+              placeholder="Example: Friendly robot gardener"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="result">What happened?</label>
+            <textarea
+              id="result"
+              name="result"
+              rows="5"
+              maxlength="500"
+              placeholder="Write a short fictional result..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="button-row">
+            <button type="submit">Save note</button>
+            <button id="clear-notes" class="secondary" type="button">
+              Clear all notes
+            </button>
+          </div>
+          <p id="form-message" class="form-message" aria-live="polite"></p>
+        </form>
+
+        <div class="saved-notes">
+          <h3>Saved notes</h3>
+          <div id="notes-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Built for safe, fictional learning experiments.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
