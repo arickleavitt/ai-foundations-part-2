@@ -1,0 +1,19 @@
+Prompt Engineering Basics
+
+Prompt engineering is the practice of writing clear instructions for an AI model. A prompt can include a task, background information, examples, constraints, and the desired output format.
+
+A weak prompt might say: "Tell me about this."
+
+A stronger prompt might say: "Summarize the following article in five bullet points for a beginner audience. Include the main idea, two supporting details, and one open question."
+
+Good prompts are specific. They tell the model what role to play, what input to use, what output to produce, and what to avoid.
+
+Useful prompt patterns:
+- Define the task clearly.
+- Provide relevant context.
+- Specify the audience.
+- Ask for a format, such as bullets, JSON, a table, or a short paragraph.
+- Include examples when consistency matters.
+- Tell the model what to do when information is missing.
+
+Prompt engineering is not magic. It works best when paired with good data, retrieval, evaluation, and application logic.

@@ -1,0 +1,21 @@
+Chunking Strategies For RAG
+
+Chunking is the process of splitting documents into smaller pieces before embedding them. Good chunking improves retrieval quality.
+
+If chunks are too small, they may lose important context. If chunks are too large, retrieval may return broad text that contains unrelated information.
+
+A common beginner strategy is fixed-size chunking. For example, split text into chunks of about 800 to 1,200 characters with some overlap between chunks. Overlap helps preserve context across chunk boundaries.
+
+More advanced strategies split by structure. Markdown documents can be split by headings. PDFs can be split by page or section. Code can be split by function or class.
+
+Chunking choices depend on the documents and user questions. A legal document, a product manual, a research paper, and a chat transcript may each need a different approach.
+
+Useful metadata for chunks:
+- Source filename.
+- Chunk index.
+- Page number.
+- Section heading.
+- Document title.
+- Timestamp or version.
+
+The best chunking strategy is usually found through testing. Ask real questions, inspect retrieved chunks, and adjust chunk size and overlap.

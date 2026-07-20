@@ -1,0 +1,15 @@
+Artificial Intelligence Overview
+
+Artificial intelligence, or AI, is a field of computer science focused on building systems that can perform tasks that usually require human intelligence. These tasks include understanding language, recognizing images, making predictions, planning steps, and generating new content.
+
+Modern AI systems often use machine learning. Instead of writing every rule by hand, developers train models on data so the model can learn patterns. A model might learn how words relate to each other, how images are structured, or how past behavior can help predict future outcomes.
+
+Common examples of AI include chatbots, recommendation systems, fraud detection tools, translation apps, image classifiers, voice assistants, and coding assistants.
+
+AI is useful because it can process large amounts of information quickly. It can help people summarize documents, answer questions, draft messages, classify data, and automate repetitive work. However, AI can also make mistakes, so important outputs should be reviewed by a human.
+
+Key ideas:
+- AI systems perform tasks that seem intelligent.
+- Machine learning models learn from data.
+- Generative AI can create text, images, audio, code, and other content.
+- AI is powerful, but it still needs careful evaluation and responsible use.

@@ -1,0 +1,24 @@
+Prompting For RAG
+
+Prompting is especially important in RAG applications. The model should answer using the retrieved context instead of inventing information.
+
+A basic RAG prompt often includes three parts:
+
+1. Instructions that define the assistant's behavior.
+2. Retrieved context from documents.
+3. The user's question.
+
+Example instruction:
+"Answer the question using only the provided context. If the answer is not in the context, say that you do not know based on the documents."
+
+This instruction helps reduce hallucinations because it tells the model not to rely on unsupported information.
+
+RAG prompts should also ask for citations or source references when the app has source metadata. This makes answers easier to verify.
+
+Good RAG prompt practices:
+- Keep the retrieved context clearly separated from the question.
+- Tell the model how to handle missing information.
+- Include source names or chunk IDs.
+- Avoid sending too many irrelevant chunks.
+- Ask for concise answers unless the user requests detail.
+- Test prompts with realistic user questions.

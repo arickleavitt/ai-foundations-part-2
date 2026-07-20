@@ -1,0 +1,16 @@
+Large Language Models
+
+Large language models, often called LLMs, are AI models trained to understand and generate text. They learn from large collections of written material and can produce responses based on patterns in language.
+
+LLMs can answer questions, summarize documents, translate text, draft emails, write code, create outlines, and help with brainstorming. They are especially useful when a task involves language, reasoning, or transforming information from one format into another.
+
+An LLM does not truly know facts the same way a person does. It predicts likely text based on the input it receives and what it learned during training. Because of this, it can sometimes produce incorrect information that sounds confident. This is often called a hallucination.
+
+Developers can improve LLM applications by giving the model clear instructions, providing relevant context, using retrieval-augmented generation, adding tool access, and validating outputs.
+
+Important LLM concepts:
+- Context window: how much text the model can consider at one time.
+- Prompt: the input instructions and information sent to the model.
+- Temperature: a setting that controls randomness.
+- Tokens: pieces of text used by the model internally.
+- System message: high-priority instructions that guide model behavior.

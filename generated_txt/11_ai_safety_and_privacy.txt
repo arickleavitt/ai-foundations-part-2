@@ -1,0 +1,19 @@
+AI Safety And Privacy
+
+AI safety means designing AI systems so they behave reliably and reduce harm. Privacy means protecting sensitive information used by or shown to the system.
+
+In RAG applications, privacy is especially important because users may upload internal documents, customer data, contracts, notes, or personal information.
+
+Basic privacy practices:
+- Do not upload secrets unless the system is designed to handle them.
+- Store only the data you actually need.
+- Limit access to the vector database.
+- Remove old data when it is no longer needed.
+- Avoid logging sensitive prompts or documents.
+- Explain to users how their data is handled.
+
+Safety practices include giving the model clear boundaries, validating outputs, adding human review for important decisions, and refusing tasks that are harmful or unsupported.
+
+AI models can produce wrong answers, biased outputs, or persuasive text that is not true. For high-stakes areas such as medical, legal, financial, or safety-critical decisions, AI should support qualified humans rather than replace them.
+
+Responsible AI development is a process. It includes design, testing, documentation, monitoring, and improvement over time.

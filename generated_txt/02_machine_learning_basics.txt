@@ -1,0 +1,17 @@
+Machine Learning Basics
+
+Machine learning is a major part of artificial intelligence. It is the process of training a computer model to find patterns in data and use those patterns to make predictions or decisions.
+
+A simple example is email spam detection. A machine learning model can be trained on many examples of spam and non-spam emails. Over time, it learns signals that help it decide whether a new email looks suspicious.
+
+There are several common types of machine learning:
+
+Supervised learning uses labeled examples. For example, a dataset might include customer messages labeled as positive, negative, or neutral.
+
+Unsupervised learning looks for patterns without labels. For example, it might group similar customers together based on behavior.
+
+Reinforcement learning trains systems through rewards and penalties. It is often used in games, robotics, and decision-making tasks.
+
+Machine learning workflows usually include collecting data, cleaning data, training a model, testing the model, and monitoring performance after deployment.
+
+Good machine learning depends on good data. Poor data quality can lead to unreliable predictions, biased results, or models that fail in real-world use.

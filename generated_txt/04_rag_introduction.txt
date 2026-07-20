@@ -1,0 +1,20 @@
+Introduction To RAG
+
+RAG stands for Retrieval-Augmented Generation. It is a common pattern for building AI apps that answer questions using your own documents or knowledge base.
+
+The basic idea is simple. First, documents are split into smaller chunks. Then each chunk is converted into an embedding, which is a list of numbers that represents the meaning of the text. These embeddings are stored in a vector database.
+
+When a user asks a question, the app converts the question into an embedding too. The vector database compares the question embedding with the stored document embeddings and returns the most relevant chunks.
+
+Those chunks are then sent to a language model along with the user's question. The model uses the retrieved context to generate an answer.
+
+RAG is useful because it helps the model answer using current, private, or specialized information that may not be in the model's training data.
+
+A typical RAG pipeline:
+1. Load documents.
+2. Split documents into chunks.
+3. Create embeddings for chunks.
+4. Store embeddings in a vector database.
+5. Embed the user's question.
+6. Retrieve relevant chunks.
+7. Generate an answer using the chunks as context.

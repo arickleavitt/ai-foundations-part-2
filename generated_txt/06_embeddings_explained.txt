@@ -1,0 +1,18 @@
+Embeddings Explained
+
+An embedding is a list of numbers that represents the meaning of text or other data. In AI applications, embeddings make it possible to compare the similarity of different pieces of information.
+
+For example, the phrases "how to reset my password" and "I forgot my login credentials" use different words but may have similar meanings. A good embedding model should place those phrases close together in vector space.
+
+Embeddings are used in search, recommendation systems, clustering, duplicate detection, classification, and RAG applications.
+
+In a document question-answering app, each document chunk is converted into an embedding. The user's question is also converted into an embedding. The system then searches for chunks whose embeddings are closest to the question embedding.
+
+Embeddings are not the final answer. They are a retrieval tool. After relevant chunks are found, a language model can use those chunks to produce a readable answer.
+
+Practical tips:
+- Remove unnecessary boilerplate before embedding.
+- Keep chunks large enough to preserve meaning.
+- Keep chunks small enough to retrieve precise information.
+- Store source metadata with each embedded chunk.
+- Re-embed documents when the embedding model or source text changes.

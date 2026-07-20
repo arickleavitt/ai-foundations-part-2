@@ -1,0 +1,18 @@
+Vector Databases
+
+A vector database stores embeddings and makes them searchable. An embedding is a numeric representation of data such as text, images, or audio. Similar meanings usually have similar vectors.
+
+In a RAG app, a vector database stores document chunks and their embeddings. When a user asks a question, the app embeds the question and searches for chunks with similar vectors.
+
+Examples of vector databases and vector search tools include ChromaDB, Pinecone, Weaviate, Milvus, FAISS, Qdrant, and Elasticsearch with vector search.
+
+ChromaDB is popular for local development because it is simple to run on a developer machine. It can store vectors persistently in a local folder, which makes it useful for prototypes, tutorials, and small internal tools.
+
+Metadata is also important. A chunk might include metadata such as source filename, page number, author, date, section title, or chunk index. Metadata helps the app show citations and filter results.
+
+Good vector search depends on:
+- Useful chunk sizes.
+- High-quality embedding models.
+- Clean source documents.
+- Relevant metadata.
+- A retrieval strategy that matches the user's task.

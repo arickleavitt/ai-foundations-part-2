@@ -1,0 +1,22 @@
+Building AI Applications
+
+Building an AI application is different from simply calling a model API. A useful app combines model calls with product design, data handling, user experience, error handling, evaluation, and monitoring.
+
+A simple AI app might take user input, send it to a model, and show the response. A more complete app may retrieve documents, call tools, validate structured output, save conversation history, and show citations.
+
+Common parts of an AI app:
+- User interface.
+- Prompt templates.
+- Model API calls.
+- Retrieval or search.
+- Data storage.
+- Authentication.
+- Error handling.
+- Logging and monitoring.
+- Evaluation tests.
+
+For a beginner RAG app, the main pieces are a file uploader, a text splitter, an embedding model, a vector database, a question box, a retriever, and a chat model.
+
+A good AI app should be clear about what it can and cannot do. It should help users understand the source of answers and recover gracefully when something goes wrong.
+
+The best way to improve an AI app is to test it with real tasks, observe failures, and make focused changes. Improvements may come from better prompts, better chunking, cleaner data, stronger retrieval, or a more suitable model.

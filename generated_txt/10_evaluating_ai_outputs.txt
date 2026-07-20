@@ -1,0 +1,18 @@
+Evaluating AI Outputs
+
+AI applications should be evaluated before they are trusted. Evaluation means checking whether outputs are accurate, useful, safe, and consistent.
+
+For a RAG app, evaluation often starts with a test set of questions and expected answers. The developer asks the app each question, reviews the answer, and checks whether the retrieved sources support the response.
+
+Important evaluation questions:
+- Did the app retrieve the right chunks?
+- Did the model answer using the retrieved context?
+- Did the answer include unsupported claims?
+- Did the app say "I do not know" when the documents lacked the answer?
+- Was the answer clear for the intended user?
+
+Evaluation can be manual, automated, or both. Manual review is useful early in development. Automated checks are helpful when the app changes frequently.
+
+Metrics for retrieval include precision, recall, and relevance. Metrics for answer quality include correctness, groundedness, helpfulness, and formatting consistency.
+
+AI systems can drift as documents, prompts, models, and user behavior change. Ongoing monitoring helps catch problems after launch.
